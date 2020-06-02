@@ -5,6 +5,7 @@ import Nav from './components/Nav'
 import Menu from './components/Menu';
 import {DISHES} from './shared/dishes';
 
+
 class App extends React.Component{
 
   constructor(props){
@@ -18,10 +19,12 @@ class App extends React.Component{
   return (
         <div>
           <Nav/>
+          
           <Menu dishes={this.state.dishes}/>
         </div>
     );
   }
 }
+
 
 export default App;
