@@ -35,14 +35,15 @@ class DishDetail extends React.Component{
                 </div>
             )
         }
-        const com = comments.map(comment =>{
+        const com = comments.map(
+            comment =>{
             return(
                 <li key= {comment.id}> 
                     <p> 
                         {comment.id}
                     </p>
                     <p>
-                        {comment.author} &n 
+                        {comment.author} &nbsp; 
                         date: {comment.date}
                     </p>
 
