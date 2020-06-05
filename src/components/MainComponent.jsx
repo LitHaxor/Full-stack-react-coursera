@@ -1,11 +1,10 @@
-import React, { Component } from 'react';
-import { Navbar, NavbarBrand } from 'reactstrap';
+import React from 'react';
 import Menu from './Menu';
 import DishDetail from './DishDetail';
 import { DISHES } from '../shared/dishes';
 import Nav from './Nav';
 
-class Main extends Component {
+class Main extends React.Component {
 
   constructor(props) {
     super(props);
