@@ -2,7 +2,8 @@ import React from 'react';
 import Menu from './Menu';
 import DishDetail from './DishDetail';
 import { DISHES } from '../shared/dishes';
-import Nav from './Nav';
+import Header from  './Header';
+import Footer from './Footer';
 
 class Main extends React.Component {
 
@@ -21,13 +22,14 @@ class Main extends React.Component {
   render() {
     return (
       <div >
-        <Nav/>
-      <div className="container">
+        <Header/>
+          <div classNamde="container">
 
-      
+        
         <Menu dishes={this.state.dishes} onClick={(dishId) => this.onDishSelect(dishId)} />
         <DishDetail dish={this.state.dishes.filter((dish) => dish.id === this.state.selectedDish)[0]} />
       </div>
+      <Footer/>
       </div>
     );
   }
