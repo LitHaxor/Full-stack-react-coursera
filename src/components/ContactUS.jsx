@@ -136,7 +136,7 @@ class  Contact extends React.Component{
                                         onChange={this.handleInputChange}
                                         valid={errors.firstName === ''}
                                         invalid = {errors.firstName !== ''}
-                                        onBlur={this.handleBlur('firstName')}></Input>
+                                        onBlur={this.handleBlur('firstName')}/>
                                         <FormFeedback>
                                             {errors.firstName}
                                         </FormFeedback>
@@ -150,7 +150,7 @@ class  Contact extends React.Component{
                                         onChange={this.handleInputChange}
                                         valid={errors.lastName === ''}
                                         invalid = {errors.lastName !== ''}
-                                        onBlur={this.handleBlur('lastName')}></Input>
+                                        onBlur={this.handleBlur('lastName')}/>
                                         <FormFeedback>
                                             {errors.lastName}
                                         </FormFeedback>
