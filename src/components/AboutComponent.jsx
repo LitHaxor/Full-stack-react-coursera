@@ -1,8 +1,7 @@
 import React from 'react';
 import { Breadcrumb, BreadcrumbItem, Card, CardBody, CardHeader, Media } from 'reactstrap';
-
-//import RenderLeader from './RenderLeader';
 import { Link } from 'react-router-dom';
+
 
 const RenderLeader=(props)=>
 {
@@ -21,13 +20,12 @@ const RenderLeader=(props)=>
     );
 }
 
-
 function About(props) {
 
-const leaders = props.leaders.map((leader) => {
-     return(
-         <RenderLeader leader={leader}/>
-     )
+    const leaders = props.leaders.map((leader) => {
+        return (
+           <React.Fragment> <RenderLeader leader={leader}/><br /></React.Fragment>
+        );
     });
 
     return(
@@ -40,7 +38,7 @@ const leaders = props.leaders.map((leader) => {
                 <div className="col-12">
                     <h3>About Us</h3>
                     <hr />
-                </div>
+                </div>                
             </div>
             <div className="row row-content">
                 <div className="col-12 col-md-6">
@@ -94,4 +92,6 @@ const leaders = props.leaders.map((leader) => {
     );
 }
 
-export default About;
+
+
+export default About; 
