@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { Card, CardImg, CardText, CardBody, CardTitle , Breadcrumb, BreadcrumbItem, Button, Modal, ModalHeader, ModalBody, Row, Label, Col} from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { Control, LocalForm, Errors } from 'react-redux-form';
-import { Loading } from "./LoadingComponent";
+import { Loading } from "../redux/LoadingComponent";
 import { baseUrl } from '../shared/baseUrl';
 
 const required = (val) => val && val.length;
